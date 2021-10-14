@@ -1,6 +1,6 @@
 #!/usr/bin/php
 <?php
-require_once '/usr/src/UniFi-API-client-master/src/Client.php';
+require_once '/etc/alarmmonitor/Unifi-Client.php';
 // Update the following line and include your Unifi Controller IP
 $controller_url = "https://192.168.1.1:443";
 // Update the following line and include the username of the Limited Admin account you created
