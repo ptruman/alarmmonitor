@@ -4,7 +4,7 @@ Bash script to monitor wireless devices IP connectivity on a Unifi network, and 
 # Overview / My Use Case
 I use a [Texecom](https://www.texe.com/) alarm system in my house, which is connected to the Internet (and Texecom Cloud) via IP.  The alarm uses a Texecom "SmartCom" device for it's connectivity, which can be wired or wirelessly connected. Due to building issues, mine is connected wirelessly.  I also fitted a ComWIFI communicator in the panel so I can monitor and administer the panel without interfering wth the Texecom Cloud monitoring.  Every so often, signal issues mean the devices can remain 'associated' to the Wireless Access Point (WAP), but not retain a full IP connection (i.e. won't ping)
 
-I also run a Unifi network in my house, which has an API, meaning I can force wireless devices to disconnect/reconnect - which typically resolves the issue. 
+I also run a [Unifi](https://ui.com) network in my house, which has an API, which can be used to force wireless devices to disconnect/reconnect - which typically resolves the issue. 
 
 If I was away from home, and the devices had a WiFi blip, I would lose reporting, or (if at home) potentially lose admin access - and have to login to my controller and manually kick the device.
 
