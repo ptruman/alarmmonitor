@@ -18,6 +18,7 @@ You will need:
 * One or more Unifi Wireless Access Points (UDM Base contains it's own WAP)
 * A [Texecom Premier Elite](https://www.texe.com/uk/products/series/control-panels/premier-elite-series/) series alarm panel with an IP based [Texecom Premier Elite series communicator](https://www.texe.com/uk/products/series/communicators/premier-elite-series/) (i.e. SmartCom 4G, SmartCom, ComIP or ComWIFI)<br/>***OR***<br/>a WiFi device you want to monitor...
 * A Linux box with a Bash shell and Perl 7.3 or higher
+* The Unifi Client.php from [Art-Of-WiFi's Unifi AP Client](https://github.com/Art-of-WiFi/UniFi-API-client)
 
 # Instructions
 1. On your Unifi controller
@@ -25,11 +26,12 @@ You will need:
 2. On your Linux box
    1. Create a folder such as */etc/alarmmonitor*
    2. Create a log folder such as */var/log/alarmmonitor*
-   3. Copy the **alarmping.sh** and **reconnect_alarm.php** scripts into the */etc/alarmmonitor* folder
-   4. Check both scripts are readable/executable via whatever account you wish to run the monitor under (esp. if you are going to wrap it as a service
-   5. Check that **reconnect_alarm.php** is not readable by anyone you don't want being able to see your new Controller credentials
-   6. Check that the log folder you created in (3) above is read/writeable by the same account
-   7. Edit the **alarmping.sh** script
+   3. Download [https://raw.githubusercontent.com/Art-of-WiFi/UniFi-API-client/master/src/Client.php] into */etc/alarmmonitor* and call it Unifi-Client.php
+   4. Copy the **alarmping.sh** and **reconnect_alarm.php** scripts into the */etc/alarmmonitor* folder
+   5. Check both scripts are readable/executable via whatever account you wish to run the monitor under (esp. if you are going to wrap it as a service
+   6. Check that **reconnect_alarm.php** is not readable by anyone you don't want being able to see your new Controller credentials
+   7. Check that the log folder you created in (3) above is read/writeable by the same account
+   8. Edit the **alarmping.sh** script
       1. Add the IP or IPs for your alarm devices in **ALARMIPS**<br/>
       i.e. `ALARMIPS=(192.168.100.1)* or *ALARMIPS=(192.168.100.1 192.168.100.2*)`
       2. Add the MAC address or addresses for your alarm devices in **ALARMMACS**<br/>
