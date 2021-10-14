@@ -1,4 +1,4 @@
-# alarmping
+# alarmmonitor
 Bash script to monitor wireless devices IP connectivity on a Unifi network, and force reconnection if they lose IP but remain associated to an Access Point.
 
 # Overview / My Use Case
