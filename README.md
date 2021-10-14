@@ -24,7 +24,7 @@ You will need:
    1. Create a "Limited Admin" user and make a note of the username and password you assign
 2. On your Linux box
    1. Create a folder such as */etc/alarmmonitor*
-   2. Create a log folder such as /var/log/alarmmonitor
+   2. Create a log folder such as */var/log/alarmmonitor*
    3. Copy the **alarmping.sh** and **reconnect_alarm.php** scripts into the */etc/alarmmonitor* folder
    4. Check both scripts are readable/executable via whatever account you wish to run the monitor under (esp. if you are going to wrap it as a service
    5. Check that **reconnect_alarm.php** is not readable by anyone you don't want being able to see your new Controller credentials
