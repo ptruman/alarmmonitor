@@ -14,7 +14,7 @@ You could in theory use this script to monitor any wireless device connectivity 
 
 # Requirements
 You will need:
-* A [Unifi](https://ui.com) Dream Machine network controller (UDM Pro or UDM Base)
+* A [Unifi](https://ui.com) network controller (such as UDM Pro or UDM Base, or a Docker based controller)
 * One or more Unifi Wireless Access Points (UDM Base contains it's own WAP)
 * A [Texecom Premier Elite](https://www.texe.com/uk/products/series/control-panels/premier-elite-series/) series alarm panel with an IP based [Texecom Premier Elite series communicator](https://www.texe.com/uk/products/series/communicators/premier-elite-series/) (i.e. SmartCom 4G, SmartCom, ComIP or ComWIFI)<br/>***OR***<br/>a WiFi device you want to monitor...
 * A Linux box with a Bash shell and Perl 7.3 or higher
