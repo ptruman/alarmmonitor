@@ -1,7 +1,7 @@
 # alarmping
 Bash script to monitor wireless devices IP connectivity on a Unifi network, and force reconnection if they lose IP but remain associated to an Access Point.
 
-# Overview
+# Overview / My Use Case
 I use a [Texecom](https://www.texe.com/) alarm system in my house, which is connected to the Internet (and Texecom Cloud) via IP.  The alarm uses a Texecom "SmartCom" device for it's connectivity, which can be wired or wirelessly connected. Due to building issues, mine is connected wirelessly.  I also fitted a ComWIFI communicator in the panel so I can monitor and administer the panel without interfering wth the Texecom Cloud monitoring.  Every so often, signal issues mean the devices can remain 'associated' to the Wireless Access Point (WAP), but not retain a full IP connection (i.e. won't ping)
 
 I also run a Unifi network in my house, which has an API, meaning I can force wireless devices to disconnect/reconnect - which typically resolves the issue. 
@@ -10,11 +10,13 @@ If I was away from home, and the devices had a WiFi blip, I would lose reporting
 
 This script is the result of wanting to be lazy 😃
 
+You could in theory use this script to monitor any wireless device connectivity on a Unifi WLAN.
+
 # Requirements
 You will need:
 * A [Unifi](https://ui.com) Dream Machine network controller (UDM Pro or UDM Base)
 * One or more Unifi Wireless Access Points (UDM Base contains it's own WAP)
-* A [Texecom Premier Elite](https://www.texe.com/uk/products/series/control-panels/premier-elite-series/) series alarm panel with an IP based [Texecom Premier Elite series communicator](https://www.texe.com/uk/products/series/communicators/premier-elite-series/) (i.e. SmartCom 4G, SmartCom, ComIP or ComWIFI)
+* A [Texecom Premier Elite](https://www.texe.com/uk/products/series/control-panels/premier-elite-series/) series alarm panel with an IP based [Texecom Premier Elite series communicator](https://www.texe.com/uk/products/series/communicators/premier-elite-series/) (i.e. SmartCom 4G, SmartCom, ComIP or ComWIFI)<br/>***OR***<br/>a WiFi device you want to monitor...
 * A Linux box with a Bash shell and Perl 7.3 or higher
 
 # Instructions
