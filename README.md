@@ -62,3 +62,7 @@ The **alarmping.sh** script will ping your defined devices periodically, as defi
 * If the script detects a drop you should see a message that the name of the relevant device is not connected, and that it is attempting a reconnection.  It also lists the time that the device was last seen.
 * You will see files called *online***x** or *offline***x** based on the number of the device as entered in ALARMIPS - for a quick and easy view via ls
 * The *lastseen***x** files contain the timestamp of the time a device was last seen.
+
+# Controller Upgrades  
+If you find your monitor is no longer working, it is likely due to a controller upgrade.
+Update the version in **reconnect_alarm.php** and re-download the latest version of [https://raw.githubusercontent.com/Art-of-WiFi/UniFi-API-client/master/src/Client.php] into */etc/alarmmonitor* and replace Unifi-Client.php
